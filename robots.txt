@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Allow: /fr/
 
 Sitemap: https://www.gelatoantico.ma/sitemap.xml
