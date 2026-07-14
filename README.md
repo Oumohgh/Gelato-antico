@@ -1,4 +1,4 @@
-# Gelato Antico — Website
+# Gelato Antico Website
 
 Official website for **Gelato Antico**, an artisan Italian gelato shop in Marrakech, Morocco.
 
@@ -29,8 +29,8 @@ gelato-antico-site/
 
 ## Multilingual
 
-- `/` — English (default)
-- `/fr/` — French
+- `/` English (default)
+- `/fr/` French
 
 Both pages share the same `css/style.css`, `js/script.js`, and `assets/`
 folder. Only the text content and `<head>` metadata differ.
@@ -51,7 +51,7 @@ Open the relevant HTML file and edit the text directly:
 - **English**: `index.html`
 - **French**: `fr/index.html`
 
-There is no translation file — each page is self-contained, which is better
+There is no translation file; each page is self-contained, which is better
 for SEO (crawlers see the right language immediately).
 
 When you change text in one language, **always update the other**. See the
@@ -67,7 +67,7 @@ When you change text in one language, **always update the other**. See the
 
 ## How to Deploy
 
-The site is static — no build step required.
+The site is static; no build step required.
 
 ```sh
 # Preview locally

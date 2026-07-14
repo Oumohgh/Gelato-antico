@@ -103,7 +103,7 @@ nav a:hover::after, nav a.active::after { width: 100%; }
 nav a.active { color: var(--primary); }
 header:not(.scrolled):not(.menu-open) nav a.active { color: var(--bg); }
 
-/* Single language switcher — lives inside nav */
+/* Single language switcher, lives inside nav */
 .lang-switch {
   display: flex; align-items: center; gap: 6px;
   font-size: 0.78rem; font-weight: 600; letter-spacing: 0.04em;

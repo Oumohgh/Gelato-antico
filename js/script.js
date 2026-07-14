@@ -1,5 +1,5 @@
 /* ==========================================================
-   Gelato Antico — Main script
+   Gelato Antico Main script
    Handles: header scroll, mobile menu, scrollspy,
             reveal-on-scroll, newsletter form.
    i18n is handled by separate HTML files per language.
@@ -35,7 +35,7 @@
     });
   });
 
-  /* ===== Scrollspy — highlight active nav link ===== */
+  /* ===== Scrollspy, highlight active nav link ===== */
   var sections = document.querySelectorAll('section[id]');
   var navLinks = document.querySelectorAll('nav a[href^="#"]');
   var spy = new IntersectionObserver(function (entries) {
@@ -61,7 +61,7 @@
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
 
-  /* ===== Newsletter form — prevent default submit ===== */
+  /* ===== Newsletter form, prevent default submit ===== */
   var form = document.querySelector('.newsletter-form');
   if (form) {
     form.addEventListener('submit', function (e) { e.preventDefault(); });
