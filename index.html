@@ -19,8 +19,8 @@
 <meta property="og:url" content="https://www.gelatoantico.ma/">
 <meta property="og:title" content="Gelato Antico — Artisan Gelato & Coffee in Marrakech">
 <meta property="og:description" content="Hand-crafted Italian gelato made fresh daily in the heart of Marrakech. Premium ingredients, authentic recipes, unforgettable taste.">
-<meta property="og:image" content="https://www.gelatoantico.ma/assets/img/ShopOverview.jpeg">
-<meta property="og:image:alt" content="Gelato Antico shop in Marrakech">
+<meta property="og:image" content="https://www.gelatoantico.ma/assets/img/MainHero.png">
+<meta property="og:image:alt" content="Artisan gelato at Gelato Antico in Marrakech">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="fr_FR">
 <meta property="og:site_name" content="Gelato Antico">
@@ -28,8 +28,8 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Gelato Antico — Artisan Gelato & Coffee in Marrakech">
 <meta name="twitter:description" content="Hand-crafted Italian gelato made fresh daily in the heart of Marrakech.">
-<meta name="twitter:image" content="https://www.gelatoantico.ma/assets/img/ShopOverview.jpeg">
-<meta name="twitter:image:alt" content="Gelato Antico shop in Marrakech">
+<meta name="twitter:image" content="https://www.gelatoantico.ma/assets/img/MainHero.png">
+<meta name="twitter:image:alt" content="Artisan gelato at Gelato Antico in Marrakech">
 
 <meta name="theme-color" content="#FAF7F2">
 <link rel="icon" type="image/png" href="assets/favicon.png">
@@ -37,7 +37,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <script type="application/ld+json">
 {
@@ -45,7 +45,7 @@
   "@type": "IceCreamShop",
   "name": "Gelato Antico",
   "alternateName": "Gelato Antico Marrakech",
-  "image": "https://www.gelatoantico.ma/assets/img/ShopOverview.jpeg",
+  "image": "https://www.gelatoantico.ma/assets/img/MainHero.png",
   "logo": "https://www.gelatoantico.ma/assets/img/logo.png",
   "description": "Hand-crafted Italian gelato made fresh daily in the heart of Marrakech. Premium ingredients, authentic recipes, signature flavors including saffron, avocado and amlou.",
   "address": {
@@ -114,9 +114,10 @@
 
 <main id="main">
 <section class="hero" id="top" aria-label="Hero">
-  <div class="hero-bg">
-    <img src="assets/img/ScopOfIceChocolat.jpg" alt="Artisan chocolate gelato scoop freshly churned at Gelato Antico Marrakech" fetchpriority="high">
-  </div>
+  <picture class="hero-bg">
+    <source media="(min-width: 769px)" srcset="assets/img/MainHero.png" type="image/png">
+    <img src="assets/img/Oreo_Ice_Cream.jfif" alt="Close-up of artisan gelato scoop at Gelato Antico in Marrakech" fetchpriority="high">
+  </picture>
   <div class="hero-content container">
     <div class="hero-tag">Marrakech, Morocco</div>
     <h1>Authentic Italian Gelato in the Heart of <em>Marrakech</em></h1>
@@ -161,8 +162,8 @@
 
 <section class="about" id="about" aria-label="About">
   <div class="container about-grid">
-    <div class="about-image reveal">
-      <img src="assets/img/OwnerHoldingIceCream.jpeg" alt="Gelato Antico owner holding freshly made gelato" loading="lazy" width="600" height="750">
+    <div class="about-image reveal img-reveal">
+      <img src="assets/img/OwnerHolding.png" alt="Gelato Antico owner holding freshly made gelato" loading="lazy" width="600" height="750">
       <div class="about-badge">Since 2020 · Marrakech</div>
     </div>
     <div class="about-text">
@@ -186,11 +187,6 @@
         </div>
       </div>
     </div>
-  </div>
-  <div class="about-video container reveal">
-    <video autoplay muted loop playsinline preload="none" poster="assets/img/OwnerHoldingIceCream.jpeg" aria-label="Gelato Antico crafting gelato">
-      <source src="assets/videos/ce-glacier.mp4" type="video/mp4">
-    </video>
   </div>
 </section>
 
@@ -220,7 +216,7 @@
       </div>
       <div class="flavor-card reveal reveal-delay-1">
         <div class="flavor-img">
-          <img src="assets/img/allflavors.jpg" alt="Saffron gelato at Gelato Antico" loading="lazy" width="400" height="300">
+          <img src="assets/img/flavorrrr.jpg" alt="Saffron gelato at Gelato Antico" loading="lazy" width="400" height="300">
         </div>
         <div class="flavor-info">
           <div class="flavor-tag">Signature</div>
@@ -263,6 +259,53 @@
   </div>
 </section>
 
+<section class="shop-reel" aria-label="From the shop">
+  <div class="container">
+    <div class="section-center">
+      <div class="section-tag reveal">Straight From The Shop</div>
+      <h2 class="section-title reveal reveal-delay-1">A taste of the <em>atmosphere</em></h2>
+      <p class="section-subtitle reveal reveal-delay-2">Step inside for a moment — smell the waffle cones, hear the churn, watch the scoops land.</p>
+    </div>
+    <div class="shop-media reveal reveal-delay-2">
+      <!-- Mobile only: Instagram-style promotional Reel -->
+      <div class="reel-mobile">
+        <div class="reel-wrap">
+          <video autoplay muted loop playsinline preload="none" poster="assets/img/MainHero.png" aria-label="Gelato Antico shop atmosphere promotional reel">
+            <source src="assets/videos/ce-glacier.mp4" type="video/mp4">
+          </video>
+          <div class="reel-cap">
+            <div class="section-tag">Behind The Counter</div>
+            <h3>Watch the gelato come to life</h3>
+            <p>Fresh batches, every single day.</p>
+            <a class="reel-ig" href="https://instagram.com" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+              @gelatoantico
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Desktop only: premium editorial photography -->
+      <div class="feature-desktop">
+        <div class="feature-grid">
+          <div class="feat-main">
+            <img src="assets/img/Main2hero.png" alt="Artisan gelato display at Gelato Antico" loading="lazy" width="1200" height="900">
+            <div class="gallery-overlay"><span>The Churn, Every Morning</span></div>
+          </div>
+          <div class="feat-stack">
+            <div class="feat-side">
+              <img src="assets/img/CofeeNormal.jpg" alt="Freshly brewed coffee alongside gelato at Gelato Antico" loading="lazy" width="480" height="384">
+              <div class="gallery-overlay"><span>Coffee &amp; Gelato</span></div>
+            </div>
+            <div class="feat-text reveal">
+              <p>Every scoop starts behind this counter — <em>real cream, real fruit, slow churned</em>. Handed over while still soft. That's the whole point.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="gallery" id="gallery" aria-label="Gallery">
   <div class="container">
     <div class="section-center">
@@ -270,21 +313,21 @@
       <h2 class="section-title reveal reveal-delay-1">A little taste, <em>before you arrive</em></h2>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item g1 reveal">
-        <img src="assets/img/GlaceOfDragonFruit.jpg" alt="Dragon fruit gelato scoop at Gelato Antico" loading="lazy" width="500" height="667">
+      <div class="gallery-item g1 reveal img-reveal">
+        <img src="assets/img/ScopOfIceChocolat.jpg" alt="Close-up of chocolate gelato scoop at Gelato Antico" loading="lazy" width="736" height="1104">
         <div class="gallery-overlay"><span>The Perfect Scoop</span></div>
       </div>
-      <div class="gallery-item g2 reveal reveal-delay-1">
-        <img src="assets/img/AllIcecream.jpg" alt="Assorted gelato flavors on display" loading="lazy" width="500" height="375">
+      <div class="gallery-item g2 reveal reveal-delay-1 img-reveal">
+        <img src="assets/img/AllIcecream.jpg" alt="Assorted gelato flavors on display at Gelato Antico" loading="lazy" width="1440" height="1440">
         <div class="gallery-overlay"><span>Artisan Display</span></div>
       </div>
-      <div class="gallery-item g3 reveal reveal-delay-2">
-        <img src="assets/img/Shopinside.jpeg" alt="Inside Gelato Antico shop" loading="lazy" width="500" height="375">
-        <div class="gallery-overlay"><span>Crafted With Care</span></div>
+      <div class="gallery-item g3 reveal reveal-delay-2 img-reveal">
+        <img src="assets/img/ShopOver1.png" alt="Gelato Antico shop front in Marrakech" loading="lazy" width="1260" height="750">
+        <div class="gallery-overlay"><span>The Shop</span></div>
       </div>
-      <div class="gallery-item g4 reveal reveal-delay-1">
-        <img src="assets/img/flavorrrr.jpg" alt="Close-up of artisan gelato flavor at Gelato Antico" loading="lazy" width="800" height="500">
-        <div class="gallery-overlay"><span>Welcome In</span></div>
+      <div class="gallery-item g4 reveal reveal-delay-1 img-reveal">
+        <img src="assets/img/FlavorsAll.png" alt="All gelato flavors lined up at Gelato Antico" loading="lazy" width="1472" height="1052">
+        <div class="gallery-overlay"><span>Twelve Flavors, Made Today</span></div>
       </div>
     </div>
   </div>
@@ -341,8 +384,8 @@
 <section class="experience" id="experience" aria-label="Customer experience">
   <div class="container">
     <div class="experience-grid">
-      <div class="experience-img reveal">
-        <img src="assets/img/CostumerReaction.jpeg" alt="Guest enjoying gelato at Gelato Antico Marrakech" loading="lazy" width="625" height="500">
+      <div class="experience-img reveal img-reveal">
+        <img src="assets/img/2icecream.jpeg" alt="Guest enjoying gelato at Gelato Antico Marrakech" loading="lazy" width="720" height="869">
       </div>
       <div class="experience-text">
         <div class="section-tag reveal">The Experience</div>

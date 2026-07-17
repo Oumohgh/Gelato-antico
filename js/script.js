@@ -50,7 +50,7 @@
   }, { threshold: 0.35, rootMargin: '-72px 0px -50% 0px' });
   sections.forEach(function (s) { spy.observe(s); });
 
-  /* ===== Reveal on scroll ===== */
+  /* ===== Reveal on scroll (text/cards) + image clip-reveal ===== */
   var revealObserver = new IntersectionObserver(function (entries) {
     entries.forEach(function (e) {
       if (e.isIntersecting) {
@@ -59,7 +59,21 @@
       }
     });
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
-  document.querySelectorAll('.reveal').forEach(function (el) { revealObserver.observe(el); });
+  document.querySelectorAll('.reveal, .img-reveal').forEach(function (el) { revealObserver.observe(el); });
+
+  /* ===== Mobile/tablet Reel video: best-effort autoplay (NEVER on desktop) ===== */
+  var reelIsMobile = window.matchMedia('(max-width: 1023.98px)').matches;
+  if (reelIsMobile) {
+    document.querySelectorAll('.reel-mobile video').forEach(function (v) {
+      v.addEventListener('canplay', function () { var p = v.play(); if (p && p.catch) p.catch(function () {}); });
+      new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (e.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); }
+          else { v.pause(); }
+        });
+      }, { threshold: 0.4 }).observe(v);
+    });
+  }
 
   /* ===== Newsletter form, prevent default submit ===== */
   var form = document.querySelector('.newsletter-form');
