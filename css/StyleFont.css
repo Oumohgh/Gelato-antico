@@ -1,0 +1,145 @@
+@font-face { font-family: "Font Awesome 5 Brands"; font-style: normal; font-weight: normal; src: url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"); }
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 400; src: url("../webfonts/fa-regular-400.woff2") format("woff2"), url("../webfonts/fa-regular-400.woff") format("woff"), url("../webfonts/fa-regular-400.ttf") format("truetype"); }
+@font-face { font-family: "Font Awesome 5 Free"; font-style: normal; font-weight: 900; src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+
+Font & Text.fa, .fab, .fal, .far, .fas { -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.fa-lg { font-size: 1.33333em; line-height: 0.75em; vertical-align: -0.0667em; }
+.fa-xs { font-size: 0.75em; }
+.fa-sm { font-size: 0.875em; }
+.fa-1x { font-size: 1em; }
+.fa-2x { font-size: 2em; }
+.fa-3x { font-size: 3em; }
+.fa-4x { font-size: 4em; }
+.fa-5x { font-size: 5em; }
+.fa-fw { text-align: center; width: 1.25em; }
+.fa-stack-1x, .fa-stack-2x { left: 0px; position: absolute; text-align: center; width: 100%; }
+.fa-stack-2x { font-size: 2em; }
+.fab { font-family: "Font Awesome 5 Brands"; }
+.far { font-weight: 400; }
+.fa, .far, .fas { font-family: "Font Awesome 5 Free"; }
+.fa, .fas { font-weight: 900; }
+
+@font-face { font-family: BebasNeue; src: url("clientlib-site/resources/fonts/bebasneue/BebasNeue-Regular.ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-ite/resources/fonts/hurme/hurmegeometricsans1_black-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_black-webfcont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_black-webfont.ttf") format("truetype"); font-weight: 900; font-style: normal; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_bold-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_bold-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_bold-webfont.ttf") format("truetype"); font-weight: 700; font-style: normal; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_boldoblique-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_boldo`blique-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_boldoblique-webfont.ttf") format("truetype"); font-weight: 700; font-style: italic; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_hairline-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_hairline-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_hairline-webfont.ttf") format("truetype"); font-weight: 100; font-style: normal; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_light-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_light-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_light-webfont.ttf") format("truetype"); font-weight: 300; fontstyle: normal; }
+@font-face { font-family: HurmeGeometric; src: url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_oblique-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_oblique-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/hurme/hurmegeometricsans1_oblique-webfont.ttf") format("truetype"); font-weight: normal; font-style: italic; }
+@font-face { font-family: Fontoon; src: url("clientlib-site/resources/fonts/fontoon/fonti-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/fontoon/fonti-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/fontoon/fonti-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Le Gourmet"; src: url("clientlib-site/resources/fonts/legourmet/legourmet-webfont.woff2") format("woff2"), url("clientlib-site/resources/fonts/legourmet/legourmet-webfont.woff") format("woff"), url("clientlib-site/resources/fonts/legourmet/legourmet-webfont.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Pluto; src: url("clientlib-site/resources/fonts/pluto/pluto-oreo.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Pluto Sans Cond"; src: url("clientlib-site/resources/fonts/plutosanscond/pluto-sans-cond-regular.otf") format("opentype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "Hello Headline"; src: url("clientlib-site/resources/fonts/helloheadline/helloheadline-font.woff") format("woff"), url("clientlib-site/resources/fonts/helloheadline/helloheadline-font.woff2") format("woff2"); font-weight: normal; font-style: normal; }@font-face { font-family: Colby-CdBlk; src: url("clientlib-site/resources/fonts/colby/ColbyCdBlk-font.woff") format("woff"), url("clientlib-site/resources/fonts/colby/ColbyCdBlk-font.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Colby-NrBlk; src: url("clientlib-site/resources/fonts/colby/ColbyNrBlk-font.woff") format("woff"), url("clientlib-site/resources/fonts/colby/ColbyNrBlk-font.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Colby-StBld; src: url("clientlib-site/resources/fonts/colby/ColbyStBld-font.woff") format("woff"), url("clientlib-site/resources/fonts/colby/ColbyStBld-font.woff2") format("woff2"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Eesti; src: url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Regular.woff") format("woff"), url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Regular.ttf") format("truetype"); font-weight: 400; font-style: normal; }font-face { font-family: Eesti; src: url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Medium.woff") format("woff"), url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Medium.ttf") format("truetype"); font-weight: 500; font-style: normal; }
+@font-face { font-family: Eesti; src: url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Bold.woff") format("woff"), url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-Bold.ttf") format("truetype"); font-weight: 600; font-style: normal; }
+@font-face { font-family: Eesti; src: url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-UBold.woff") format("woff"), url("clientlib-site/resources/fonts/eesti/GT-Eesti-Display-UBold.ttf") format("truetype"); font-weight: 800; font-style: normal; }
+@font-face { font-family: Avenir; src: url("clientlib-site/resources/fonts/avenir/AvenirLTStd-Book.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Avenir; src: url("clientlib-site/resources/fonts/avenir/FontsFree-Net-1579-AvenirLTStd-Medium.ttf"); font-weight: 600; font-style:normal; }
+@font-face { font-family: Avenir; src: url("clientlib-site/resources/fonts/avenir/FontsFree-Net-AvenirLTStd-Black.ttf"); font-weight: 800; font-style: normal; }
+@font-face { font-family: Bicyclette; src: url("clientlib-site/resources/fonts/bicyclette/Bicyclette-Regular.ttf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: BicycletteBold; src: url("clientlib-site/resources/fonts/bicyclette/Bicyclette-Bold.ttf"); font-weight: 700; font-style: normal; }
+@font-face { font-family: Cocogoose; src: url("clientlib-site/resources/fonts/cocogoose/cocogoose-pro-bold.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: Stolzl; src: url("clientlib-site/resources/fonts/stolzl/stolzl_regular.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: PeachyKeen; src: url("clientlib-site/resources/fonts/peachykeen/peachy-keen-jf.otf"); font-weight: normal; font-style: normal; }@font-face { font-family: Paralucent; src: url("clientlib-site/resources/fonts/paralucent/paralucent-medium.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: BasicSansAltBlack; src: url("clientlib-site/resources/fonts/basicsans/BasicSansAlt-Black.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: BasicSansAltBold; src: url("clientlib-site/resources/fonts/basicsans/BasicSansAlt-Bold.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HelveticaNeueLTStdBold; src: url("clientlib-site/resources/fonts/helvetica/HelveticaNeueLTStd-BdCn.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HelveticaNeueLTStdLight; src: url("clientlib-site/resources/fonts/helvetica/HelveticaNeueLTStd-Cn.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: icomoon; src: url("clientlib-site/resources/fonts/icomoon/icomoon.ttf?16h2nz") format("truetype"), url("clientlib-site/resources/fonts/icomoon/icomoon.woff?16h2nz") format("woff"); font-weight: normal; font-style: normal; }@font-face { font-family: Paralucent; src: url("clientlib-site/resources/fonts/paralucent/paralucent-medium.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: BasicSansAltBlack; src: url("clientlib-site/resources/fonts/basicsans/BasicSansAlt-Black.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: BasicSansAltBold; src: url("clientlib-site/resources/fonts/basicsans/BasicSansAlt-Bold.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HelveticaNeueLTStdBold; src: url("clientlib-site/resources/fonts/helvetica/HelveticaNeueLTStd-BdCn.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: HelveticaNeueLTStdLight; src: url("clientlib-site/resources/fonts/helvetica/HelveticaNeueLTStd-Cn.otf"); font-weight: normal; font-style: normal; }
+@font-face { font-family: icomoon; src: url("clientlib-site/resources/fonts/icomoon/icomoon.ttf?16h2nz") format("truetype"), url("clientlib-site/resources/fonts/icomoon/icomoon.woff?16h2nz") format("woff"); font-weight: normal; font-style: normal; }--social-share-heading-font-weight: 700;
+--search-results-txt-color: #655850;
+--whiskers-color: #655850;
+}
+
+@media screen and (min-width: 992px) {
+body { --hero-subtext-font-size: 3rem; }
+}
+
+body .sub-head-paragraph { font-size: 1.8rem; }
+@media screen and (min-width: 992px) {
+body .sub-head-paragraph { font-size: 2rem; }
+}
+body .intro-copy { font-size: 2.6rem; }
+body .intro-copy-30 { font-size: 3rem; }
+body .optional-copy-14 { font-size: 1.4rem; }
+body .optional-copy-20 { font-size: 2rem; }
+body .body-copy-14 { font-size: 1.4rem; }
+body .body-copy { font-size: 1.8rem; }
+body .sub-head-30 { font-size: 2.4rem; }@media screen and (min-width: 992px) {
+body .sub-head-30 { font-size: 3rem; }
+}
+body .sub-head-36 { font-size: 3.6rem; }
+body .h1-font-48 { display: block; font-size: 4rem; line-height: 1; }
+@media screen and (min-width: 992px) {
+body .h1-font-48 { font-size: 4.8rem; }
+}
+body .h7 { font-size: 1.6rem; }
+body .h8 { font-size: 1.4rem; }
+body .h9 { font-size: 1.2rem; }
+.cmp-text { font-size: 1.4rem; font-weight: var(--rte-font-weight); }
+
+body[class*="chipsahoy-"] .upc-widget a.cmp-button__btn { font-family: Arial; font-size: 16px; line-height: 40px; font-weight: 400; }
+body[class*="chipsahoy-"] .upc-widget a.cmp-button__btn:hover { font-family: Arial; font-size: 16px;body[class*="chipsahoy-"] .upc-widget a.cmp-button__btn { font-family: Arial; font-size: 16px; line-height: 40px; font-weight: 400; }
+body[class*="chipsahoy-"] .upc-widget a.cmp-button__btn:hover { font-family: Arial; font-size: 16px; line-height: 40px; font-weight: 400; color: rgb(255, 255, 255); cursor: pointer; }
+
+body[class*="icecream-"] {
+--heading-font: 'fields-display',sans-serif;
+--copy-font: 'Manrope',sans-serif;
+--cta-font: 'Manrope',sans-serif;
+color: rgb(0, 28, 73);
+}
+body[class*="icecream-"] .sub-title-ff { font-family: var(-copy-font); }
+body[class*="icecream-"] h1, body[class*="icecream-"] h2, body[class*="icecream-"] h3, body[class*="icecream-"] h4 { font-family: var(--heading-font); }
+body[class*="icecream-"] h5, body[class*="icecream-"] h6 { font-family: var(--copy-font); text-transform: none; }
+body[class*="icecream-"] h1, body[class*="icecream-"] .h1 { font-size: 5.6rem; letter-spacing: -1px; font-weight: 700; line-height: 120% !important; }
+body[class*="icecream-"] h2, body[class*="icecream-"] .h2 { font-size: 4.8rem; letter-spacing: -1px; font-weight: 700; line-height: 120% !important; }
+body[class*="icecream-"] h3, body[class*="icecream-"] .h3 { font-size: 4rem; line-height: 48px; letter-spacing: -1px; font-weight: 700; margin-bottom: 3rem; }
+@media screen and (max-width: 991.9px) {
+body[class*="icecream-"] h3, body[class*="icecream-"] .h3 { font-size: 3.2rem; line-height: 40px; }
+}
+body[class*="icecream-"] .body-copy { font-family:Manrope, sans-serif; font-weight: 500; font-size: 1.8rem; line-height: 20px; }
+body[class*="icecream-"] .body-bold { font-weight: 700; font-size: 2rem; line-height: 150%; }
+body[class*="icecream-"] .body-small { font-weight: 600; font-size: 1.4rem; line-height: 150%; }
+body[class*="icecream-"] .body-caption { font-weight: 400; font-size: 1.2rem; line-height: 150%; }
+body[class*="icecream-"] .cta-ff { font-family: var(--cta-font); }
+body[class*="icecream-"] .heading-ff { font-family: var(--heading-font); }
+body[class*="icecream-"] .copy-ff { font-family: var(--copy-font); }
+
+body[class*="icecream-"] .btn-primary .cmp-button__btn, body[class*="icecream-"] .btn-secondary .cmp-button__btn { font-size: 1.8rem; line-height: 2.7rem; font-weight: 800; }
+
+body[class*="haagendazs-"] { --heading-font: 'HurmeGeometric'; --copy-font: 'HurmeGeometric'; --cta-font: 'HurmeGeometric'; font-family: HurmeGeometric; font-weight: 400; font-size: 16px; line-height: 2.2rem; }
+body[class*="haagendazs-"] h1, body[class*="haagendazs-"] h2, body[class*="haagendazs-"] h3, body[class*="haagendazs-"] h4, body[class*="haagendazs-"] h5, body[class*="haagendazs-"] h6 { font-family: var(--heading-font); }
+body[class*="haagendazs-"] h1, body[class*="haagendazs-"] .h1 { font-size: 5.4rem; font-weight: 700; letter-spacing: -0.01em; }
+@media screen and (min-width: 992px) {
+body[class*="haagendazs-"] h1, body[class*="haagendazs-"] .h1 { font-size: 7.2rem; line-height: 7rem !important; }
+}
+body[class*="haagendazs-"] h2, body[class*="haagendazs-"] .h2 { font-size: 5.6rem; line-height: 5.8rem; font-weight: 700; }
+body[class*="haagendazs-"] h3,ody[class*="haagendazs-"] .h3 { font-size: 2rem; font-weight: 700; }
+body[class*="haagendazs-"] .body-copy { font-weight: 400; font-size: 1.6rem; line-height: 2.2rem; }
+body[class*="haagendazs-"] .body-bold { font-weight: 700; font-size: 1.6rem; line-height: 2.2rem; }
+body[class*="haagendazs-"] .body-small { font-weight: 600; font-size: 1.4rem; line-height: 2.2rem; }
+body[class*="haagendazs-"] .body-caption { font-weight: 400; font-size: 1.4rem; line-height: 2.2rem; font-style: italic; }
+body[class*="haagendazs-"] .cmp-text a { font-size: 1.6rem; font-weight: 600; line-height: 2.2rem; }
+
+footer.page-footer .nav-heading { font-size: 16px; letter-spacing: 4px; padding-left: 10px; }
+footer.page-footer .links > ul li { font-size: 1.2rem; line-height: 1.5; text-transform: uppercase; font-weight: bold; text-align: center; margin: 1rem 0px; transition: color 0.3sease-out; }
+footer.page-footer .links > ul li > a:focus, footer.page-footer .links > ul li > a:hover { color: var(--footer-txt-color-hover); text-decoration: underline; transition: color 0.2s ease-out; }
+footer.page-footer .copyright { font-size: 1.2rem; text-align: center; margin-bottom: 0px; }
+
+body[class*="icecream-"] .customcarousel ... .featurecard ... p:first-child { font-family: fields-display, sans-serif; font-size: 2.4rem; line-height: 33px; font-weight: 600; }
+body[class*="icecream-"] .customcarousel ... .featurecard ... p:last-child { font-family: Manrope, sans-serif; font-size: 2rem; line-height: 30px; font-weight: 500; }
+
+[class^="icon-"], [class*=" icon-"] { font-family: icomoon!important; }
+
+.align-left { text-align: left; }
+.align-center { text-align: center; }
+.align-right { text-align: right; }
+
+(End of extracted typography & font-related rules.)
