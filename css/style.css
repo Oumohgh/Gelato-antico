@@ -715,17 +715,42 @@ a:focus-visible, button:focus-visible, input:focus-visible, iframe:focus-visible
   header.scrolled { padding: 10px 24px; }
   .logo { font-size: 1.55rem; }
   .logo img { height: 36px; width: 36px; }
-  nav { display: none; }
+  nav {
+    position: fixed; inset: 0; z-index: 999;
+    background: var(--bg);
+    display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 32px;
+    opacity: 0; visibility: hidden; transform: translateY(-10px);
+    transition:
+      opacity 0.34s var(--ease),
+      transform 0.34s var(--ease),
+      visibility 0s linear 0.34s;
+    will-change: opacity, transform;
+  }
+  nav.open {
+    opacity: 1; visibility: visible; transform: translateY(0);
+    transition:
+      opacity 0.34s var(--ease),
+      transform 0.34s var(--ease),
+      visibility 0s;
+  }
+  /* Staggered link entrance — GPU-friendly opacity + transform only */
+  nav > a, nav > .lang-switch {
+    opacity: 0; transform: translateY(16px);
+    transition: opacity 0.42s var(--ease-out), transform 0.42s var(--ease-out);
+  }
+  nav.open > a, nav.open > .lang-switch { opacity: 1; transform: translateY(0); }
+  nav.open > a:nth-child(1) { transition-delay: 0.07s; }
+  nav.open > a:nth-child(2) { transition-delay: 0.13s; }
+  nav.open > a:nth-child(3) { transition-delay: 0.19s; }
+  nav.open > a:nth-child(4) { transition-delay: 0.25s; }
+  nav.open > a:nth-child(5) { transition-delay: 0.31s; }
+  nav.open > .lang-switch { transition-delay: 0.39s; }
+  nav a { font-size: 1.2rem; color: var(--primary); }
+  nav .lang-switch { margin-top: 16px; }
+  nav .lang-switch a { font-size: 1rem; color: var(--primary); opacity: 0.6; }
+  nav .lang-switch a.active { opacity: 1; }
   .header-cta { display: none; }
   .mobile-toggle { display: flex; }
-  nav.open {
-    display: flex; flex-direction: column; position: fixed; inset: 0;
-    background: var(--bg); z-index: 999; justify-content: center; align-items: center; gap: 32px;
-  }
-  nav.open a { font-size: 1.2rem; color: var(--primary); }
-  nav.open .lang-switch { margin-top: 16px; }
-  nav.open .lang-switch a { font-size: 1rem; color: var(--primary); opacity: 0.6; }
-  nav.open .lang-switch a.active { opacity: 1; }
 
   .about-grid { gap: 44px; }
   .flavor-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -777,6 +802,46 @@ a:focus-visible, button:focus-visible, input:focus-visible, iframe:focus-visible
   .sticky-cta { right: 16px; bottom: 16px; }
 }
 
+/* ===== MICRO-INTERACTIONS & ENHANCED MOTION (GPU-only: transform/opacity) ===== */
+@media (hover: hover) {
+  .section-tag.reveal::before { transform: scaleX(0); transform-origin: left; transition: transform 0.7s var(--ease); }
+  .section-tag.reveal.visible::before { transform: scaleX(1); }
+  .gallery-item img { transition: transform var(--t-slow), filter var(--t); }
+  .gallery-item:hover img { filter: brightness(1.05); }
+}
+
+/* Tap / press feedback — every device, very short */
+.btn:active,
+.header-cta:active,
+.craft-cta:active { transform: scale(0.96); transition-duration: 0.12s; }
+.flavor-card:active { transform: scale(0.985); transition-duration: 0.14s; }
+.price-tile:active { transform: scale(0.97) translateY(0); transition-duration: 0.14s; }
+.gallery-item:active { transform: scale(0.98); transition-duration: 0.14s; box-shadow: var(--sh-sm); }
+.pick:active { transform: scale(0.95); transition-duration: 0.12s; }
+.test-card:active { transform: scale(0.99); transition-duration: 0.14s; }
+.sticky-cta:active { transform: scale(0.9); transition-duration: 0.12s; }
+.foot-social a:active { transform: scale(0.9); transition-duration: 0.12s; }
+.foot-col a:active { color: var(--accent); transform: translateX(3px); transition-duration: 0.12s; }
+
+/* Mobile menu tap feedback */
+@media (max-width: 1024px) {
+  nav > a:active { transform: scale(0.96); transition-duration: 0.12s; }
+  nav .lang-switch a:active { opacity: 1; transform: scale(0.94); transition-duration: 0.12s; }
+}
+
+/* Gallery progressive staggered reveal */
+.gallery-item { transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out), box-shadow var(--t); }
+.gallery-item.reveal { opacity: 0; transform: translateY(24px) scale(0.985); }
+.gallery-item.reveal.visible { opacity: 1; transform: translateY(0) scale(1); }
+.gallery-grid .gallery-item:nth-child(1) { transition-delay: 0s; }
+.gallery-grid .gallery-item:nth-child(2) { transition-delay: 0.1s; }
+.gallery-grid .gallery-item:nth-child(3) { transition-delay: 0.2s; }
+.gallery-grid .gallery-item:nth-child(4) { transition-delay: 0.14s; }
+
+/* Hero subtle parallax (rAF in script.js) */
+.hero-bg { will-change: transform; }
+.hero.parallax .hero-bg { transform: translate3d(0, 0, 0); transition: transform 0.18s linear; }
+
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
@@ -785,4 +850,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, iframe:focus-visible
   .hero-bg img, .hero-tag, .hero h1, .hero-sub, .hero-actions, .hero-price-row, .scroll-hint { animation: none; opacity: 1; transform: none; }
   .scroll-hint .line { animation: none; }
   .btn::after { display: none; }
+  /* Keep tap color feedback but neutralize movement for reduced-motion users */
+  .btn:active, .header-cta:active, .craft-cta:active, .flavor-card:active, .price-tile:active,
+  .gallery-item:active, .pick:active, .test-card:active, .sticky-cta:active,
+  .foot-social a:active, .foot-col a:active, nav > a:active { transform: none !important; }
+  .hero.parallax .hero-bg { transform: none !important; }
 }

@@ -80,4 +80,27 @@
   if (form) {
     form.addEventListener('submit', function (e) { e.preventDefault(); });
   }
+
+  /* ===== Hero subtle parallax (rAF-throttled, GPU-only, reduced-motion aware) ===== */
+  var hero = document.querySelector('.hero');
+  var heroBg = hero ? hero.querySelector('.hero-bg') : null;
+  var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (hero && heroBg && !prefersReduced) {
+    hero.classList.add('parallax');
+    var ticking = false;
+    var onScroll = function () {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(function () {
+        var y = window.scrollY;
+        if (y < window.innerHeight) {
+          var shift = Math.min(y * 0.14, 20);
+          heroBg.style.transform = 'translate3d(0,' + shift + 'px,0) scale(1.06)';
+        }
+        ticking = false;
+      });
+    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    onScroll();
+  }
 })();
