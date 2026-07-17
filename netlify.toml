@@ -1,0 +1,38 @@
+# ============================================================
+#  Gelato Antico — Netlify deploy config
+# ============================================================
+
+[build]
+  # Copy only files that should be public into dist/.
+  # Excludes .claude/, .git/, README, LICENSE and local tooling.
+  command  = "mkdir -p dist && cp -r assets css js fr index.html robots.txt sitemap.xml dist/"
+  publish  = "dist"
+
+# ---- Caching ----
+# Heavy media never changes (filenames are not versioned, so we keep
+# these immutable for a year — bust with a rename if you replace them).
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# CSS/JS have no hash in the name, so revalidate once a day.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400, must-revalidate"
+
+# HTML: always fresh.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "geolocation=(), camera=(), microphone=()"
+    X-Frame-Options = "SAMEORIGIN"
